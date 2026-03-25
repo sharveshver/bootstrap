@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Landing Page</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+body{
+    background:#f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+/* HERO SECTION (Reduced Height) */
+.hero{
+    height: 60vh;   /* 🔥 Reduced height */
+    background: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470") no-repeat center center/cover;
+    position: relative;
+    border-radius: 20px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-content{
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    top: 55%;
+    transform: translateY(-50%);
+}
+
+/* PROFILE IMAGE */
+.profile-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-bottom: 15px;
+}
+
+.hero h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.hero p{
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+/* BUTTONS */
+.btn-custom{
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+/* CARDS */
+.card-box{
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    transition: 0.3s;
+    height: 100%;
+}
+
+.card-box:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.icon{
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.blue{ color:#0d6efd; }
+.green{ color:#198754; }
+.yellow{ color:#ffc107; }
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+<div class="hero container-fluid">
+    <div class="hero-content">
+
+        <!-- PROFILE IMAGE -->
+        <img src="" class="profile-img" alt="Profile">
+
+        <h1>Welcome to Our Platform</h1>
+        <p>Discover amazing possibilities and create something extraordinary with our innovative solutions.</p>
+
+        <button class="btn btn-light btn-custom me-2">Get Started</button>
+        <button class="btn btn-outline-light btn-custom">Learn More</button>
+
+    </div>
+</div>
+
+<!-- FEATURES -->
+<div class="container mt-4">
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card-box">
+                <div class="icon blue">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <h5>Easy to Use</h5>
+                <p>Simple and intuitive interface designed for everyone.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card-box">
+                <div class="icon green">
+                    <i class="fa-solid fa-cube"></i>
+                </div>
+                <h5>Powerful Features</h5>
+                <p>Advanced capabilities that scale with your needs.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card-box">
+                <div class="icon yellow">
+                    <i class="fa-solid fa-calendar"></i>
+                </div>
+                <h5>24/7 Support</h5>
+                <p>Our team is always here to help you succeed.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
